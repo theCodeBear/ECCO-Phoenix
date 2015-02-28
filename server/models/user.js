@@ -11,7 +11,8 @@ var userSchema = mongoose.Schema({
   jobTitle    :     { type: String, required: true },
   createdAt   :     { type: Date, default: Date.now, required: true },
   events      :     [{ type: mongoose.Schema.ObjectId, ref: 'Event'}],
-  matches     :     [{{type: mongoose.Schema.ObjectId, ref: 'User'}, {type: mongoose.Schema.ObjectId, ref: 'Event'}}]
+  matches     :     [{ {type: mongoose.Schema.ObjectId, ref: 'User'}, {type: mongoose.Schema.ObjectId, ref: 'Event'} }],
+  chats       :     [{ {type: mongoose.Schema.ObjectId, ref: 'User'}, [String] }]
 });
 
 module.exports = mongoose.model('User', userSchema);

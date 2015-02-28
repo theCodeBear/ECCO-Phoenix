@@ -5,3 +5,4 @@ platforms/ios/cordova/console.log
 *.xcuserdatad
 .DS_Store
 npm-debug.log
+.env
