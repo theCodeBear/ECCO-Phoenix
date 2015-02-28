@@ -1,12 +1,12 @@
 {
-  "name": "Cordova-Hapi-Angular-Prototype",
+  "name": "ECCO Phoenix",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "PORT=3000 nodemon server/index.js"
   },
-  "author": "Todd Kronenberg",
+  "author": "Todd Kronenberg, Jose Zamudio",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.2.4",
