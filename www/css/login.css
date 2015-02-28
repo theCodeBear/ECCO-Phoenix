@@ -1,0 +1,16 @@
+body {
+  background: url('../img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron {
+  margin-top: 4%;
+  background: rgba(240, 240, 240, 0.9);
+}
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 20px 0 30px;
+  border-bottom: 1px solid #aaa;
+}

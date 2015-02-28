@@ -3,9 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <title>ECCO</title>
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/yeti/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='css/login.css' rel='stylesheet'>
 </head>
 <body>
-  Account!!
-
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-3'></div>
+      <div class='col-md-6 jumbotron'>
+        <form>
+          <div class="page-header">
+            <h3>Create Account</h3>
+          </div>
+          <div class='form-group'>
+            <label for='jobTitle'>Name</label>
+            <input class='form-control' type='text' name='name' placeholder='Enter your full name' required='true'>
+            <div style='font-size: .9em; color: #a8a8a8'>
+              You will not be able change your name again.
+            </div>
+          </div>
+          <div class='form-group'>
+            <label for='jobTitle'>Job Title</label>
+            <input class='form-control' type='text' name='jobTitle' placeholder='Enter a job title' required='true'>
+          </div>
+          <div class='form-group'>
+            <label for='skill'>Skills</label>
+            <input class='form-control' type='text' name='skills' placeholder='Comma separated' required='true'>
+          </div>
+          <div class='form-group'>
+            <label for='description'>Job Title</label>
+            <textarea class='form-control' rows='4' type='text' name='description' placeholder='Enter a description' required='true'></textarea>
+          </div>
+          <button type='submit' class='btn btn-default'>Create Account</button>
+        </form>
+      </div>
+      <div class='col-md-3'></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>
