@@ -1,0 +1,17 @@
+{
+  "name": "Cordova-Hapi-Angular-Prototype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT=3000 nodemon server/index.js"
+  },
+  "author": "Todd Kronenberg",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.2.4",
+    "good": "^5.1.2",
+    "good-console": "^4.1.0",
+    "hapi": "^8.2.0"
+  }
+}
