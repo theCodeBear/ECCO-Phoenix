@@ -2,6 +2,6 @@
 
 module.exports = {
   handler: function(request, reply) {
-    reply.view('templates/general/home');
+    reply.view('templates/general/login');
   }
 };
