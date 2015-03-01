@@ -19,6 +19,8 @@ module.exports = {
   },
   handler: function(request,reply) {
     var event = new Event(request.payload);
+    event.creator = request.auth.credentials._id;
+    event.attendees.push(event.creator);
     console.log(request.payload);
     event.save(function(err, event) {
       console.log('event saved!');
