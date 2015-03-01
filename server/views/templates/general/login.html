@@ -5,6 +5,7 @@
   <title>ECCO</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <!-- <link rel='stylesheet' href="css/login.css"> -->
+  <script src="js/facebook/login.js"></script>
 </head>
 <body>
   <div class="container-fluid">
@@ -13,6 +14,12 @@
       <div class="text-center">
         <img src='img/ECCOlogofinal.svg' alt='ECCO Logo'>
       </div>
+    </div>
+
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">Login with Facebook
+    </fb:login-button>
+
+    <div id="status">
     </div>
 
   </div>
