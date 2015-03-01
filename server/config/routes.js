@@ -10,5 +10,6 @@ module.exports = [
 
   { method: 'get', path: '/events', config: require('../routes/event/index') },
   { method: 'post', path: '/event', config: require('../routes/event/create') },
+  // { method: 'get', path: '/event/{eventId}', config: require('../routes/event/show')},
   { method: 'get', path: '/myEvents', config: require('../routes/event/myEvents') }
 ];
