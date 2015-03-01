@@ -1,1 +1,65 @@
-create event
+<div class='col-md-8'>
+  <div class='page-header'>
+    <h3>Post an Event</h3>
+  </div>
+  <form method='post' action='/event'>
+    <div class='form-group'>
+      <label for='name'>Event Name</label>
+      <input type='text' name='name' class='form-control' placeholder='Enter the event name' autofocus='true'>
+    </div>
+    <div class='form-group'>
+      <label for='startDate'>Start Date</label>
+      <input type='date' name='startDate' class='form-control' placeholder='Enter the starting day of the event'>
+    </div>
+    <div class='form-group'>
+      <label for='endDate'>End Date</label>
+      <input type='date' name='endDate' class='form-control' placeholder='Enter the ending day of the event'>
+    </div>
+    <div class='form-group'>
+      <label for='location'>Location</label>
+      <input type='text' name='location' class='form-control' placeholder='Enter full address of the event'>
+    </div>
+    <div class='form-group'>
+      <label for='picture'>Picture</label>
+      <input type='url' name='picture' class='form-control' placeholder='http://'>
+    </div>
+    <div class='form-group'>
+      <label for='backgroundPicture'>Background Picture</label>
+      <input type='url' name='backgroundPicture' class='form-control' placeholder='http://'>
+    </div>
+    <div class='form-group'>
+      <label for='twitterHandler'>Twitter Username</label>
+      <div class='input-group'>
+        <span class='input-group-addon'>@</span>
+        <input type='text' name='twitterHandler' class='form-control' placeholder='Enter full address of the event'>
+      </div>
+    </div>
+    <div class='form-group'>
+      <label for='twitterHash'>Twitter #Hashtag</label>
+      <div class='input-group'>
+        <span class='input-group-addon'>#</span>
+        <input type='text' name='twitterHash' class='form-control' placeholder='Enter full address of the event'>
+      </div>
+    </div>
+    <div class='form-group'>
+      <label for='description'>Event Description</label>
+      <textarea type='text' rows='8' data-provide="markdown" name='description' class='form-control' placeholder='Enter a detailed description'></textarea>
+    </div>
+    <button type='submit' class='btn btn-primary'>Create!</button>
+  </form>
+
+</div>
+<div class='col-md-4'>
+  <div class='page-header'>
+    <h3>Rules</h3>
+  </div>
+  <ul>
+    <li>Blah blah</li>
+    <li>Blah blah</li>
+    <li>Blah blah</li>
+    <li>Blah blah</li>
+    <li>Blah blah</li>
+    <li>Blah blah</li>
+    <li>Blah blah</li>
+  </ul>
+</div>
