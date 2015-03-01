@@ -3,11 +3,12 @@
 module.exports = [
   { method: 'get', path: '/{param*}', config: require('../routes/general/static') },
   { method: 'get', path: '/', config: require('../routes/general/login') },
-  { method: 'get', path: '/account', config: require('../routes/general/account') },
   { method: 'get', path: '/home', config: require('../routes/general/home') },
 
+  { method: 'get', path: '/user/new', config: require('../routes/user/new') },
   { method: 'post', path: '/user', config: require('../routes/user/create') },
-  { method: 'post', path: '/userUpdate', config: require('../routes/user/update') },
+  { method: 'post', path: '/user/authenticate', config: require('../routes/user/authenticate') },
+  { method: 'post', path: '/user/{userId}', config: require('../routes/user/update') },
   { method: 'get', path: '/user/{userId}', config: require('../routes/user/show') },
 
   { method: 'get', path: '/events', config: require('../routes/event/index') },

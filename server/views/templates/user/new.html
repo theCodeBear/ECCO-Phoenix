@@ -6,7 +6,7 @@
   <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> -->
   <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/yeti/bootstrap.min.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-  <link href='css/login.css' rel='stylesheet'>
+  <link href='/css/login.css' rel='stylesheet'>
   <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 <body>
@@ -20,10 +20,18 @@
           </div>
           <div class='form-group'>
             <label for='jobTitle'>Name</label>
-            <input class='form-control' type='text' name='name' placeholder='Enter your full name' required='true' value="<%= name %>">
+            <input class='form-control' type='text' name='name' placeholder='Enter your full name' required='true'>
             <div style='font-size: .9em; color: #a8a8a8'>
               You will not be able change your name again.
             </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type='email' class='form-control' name='email' placeholder="Email Address" required='true'>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type='password' class='form-control' name='password' placeholder="Password" required='true'>
           </div>
           <div class='form-group'>
             <label for='jobTitle'>Job Title</label>
@@ -31,11 +39,15 @@
           </div>
           <div class='form-group'>
             <label for='skill'>Skills</label>
-            <input class='form-control' type='text' name='skills' placeholder='Comma separated' required='true'>
+            <input class='form-control' type='text' name='skills' placeholder='Comma separated, i.e. coding, cello, surfing' required='true'>
           </div>
           <div class='form-group'>
-            <label for='description'>Job Title</label>
+            <label for='description'>About You</label>
             <textarea class='form-control' rows='4' type='text' name='description' placeholder='Enter a description' required='true'></textarea>
+          </div>
+          <div class="form-group">
+            <label for="picture">Profile Photo</label>
+            <input type='text' class='form-control' name='picture' placeholder="Url for your picture" required='true'>
           </div>
           <button type='submit' class='btn btn-default'>Create Account</button>
         </form>

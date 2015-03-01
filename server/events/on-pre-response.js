@@ -13,6 +13,7 @@ module.exports = function(server) {
     var c = request.auth.credentials || {};
     var r = request.response.source.context || {};
     console.log('ccccccccc: ', c);
+    console.log(request.auth);
 
     request.response.source.context =  _.merge(c, r);
 

@@ -9,6 +9,7 @@
   "author": "Todd Kronenberg, Jose Zamudio",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^0.8.1",
     "ejs": "^2.2.4",
     "good": "^5.1.2",
     "good-console": "^4.1.0",
