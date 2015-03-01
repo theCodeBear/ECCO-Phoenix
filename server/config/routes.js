@@ -7,6 +7,7 @@ module.exports = [
   { method: 'get', path: '/home', config: require('../routes/general/home') },
 
   { method: 'post', path: '/user', config: require('../routes/user/create') },
+  { method: 'post', path: '/userUpdate', config: require('../routes/user/update') },
   { method: 'get', path: '/user/{userId}', config: require('../routes/user/show') },
 
   { method: 'get', path: '/events', config: require('../routes/event/index') },

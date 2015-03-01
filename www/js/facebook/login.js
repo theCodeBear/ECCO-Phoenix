@@ -71,6 +71,15 @@
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
+      $.post('/user', response, function(data) {
+        console.log('posted data: ', data);
+        if (data === '/home')
+          window.location = '/home';
+        else if (data === '/')
+          window.location = '/';
+        else
+          window.location = '/account';
+      });
       console.log('User response', response);
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
