@@ -16,7 +16,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
     // controller: 'myEvents'
   })
   .state('event', {
-    url: '/event',
+    url: '/event/:id',
     templateUrl: '../templates/event.html',
     // controller: 'event'
   })

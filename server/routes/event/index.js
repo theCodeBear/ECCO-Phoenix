@@ -6,7 +6,7 @@ module.exports = {
   handler: function(request,reply) {
     Event.find({}, function(err, events) {
       if (err) { return console.error(err); };
-      console.log(events);
+      reply(events);
     });
   }
 };

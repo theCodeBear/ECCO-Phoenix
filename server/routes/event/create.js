@@ -10,7 +10,7 @@ module.exports = {
       startDate:          Joi.date().required(),
       endDate:            Joi.date().required(),
       picture:            Joi.string().required(),
-      backgroundPicture:  Joi.string().min(0),
+      backgroundPicture:  Joi.string().allow(''),
       twitterHandle:      Joi.string().required(),
       twitterHash:        Joi.string().required(),
       description:        Joi.string().required(),

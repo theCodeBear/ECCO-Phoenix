@@ -8,7 +8,7 @@ module.exports = [
 
   { method: 'post', path: '/user', config: require('../routes/user/create') },
 
-  { method: 'get', path: '/event', config: require('../routes/event/index') },
+  { method: 'get', path: '/events', config: require('../routes/event/index') },
   { method: 'post', path: '/event', config: require('../routes/event/create') },
   { method: 'get', path: '/myEvents', config: require('../routes/event/myEvents') }
 ];
