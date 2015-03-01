@@ -13,7 +13,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
   .state('myEvents', {
     url: '/myEvents',
     templateUrl: '../templates/myEvents.html',
-    // controller: 'myEvents'
+    controller: 'myEvents'
   })
   .state('event', {
     url: '/event/:id',
@@ -23,37 +23,37 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
   .state('createEvent', {
     url: '/createEvent',
     templateUrl: '../templates/createEvent.html',
-    // controller: 'createEvent'
+    controller: 'createEvent'
   })
   .state('matches', {
     url: '/matches',
     templateUrl: '../templates/matches.html',
-    // controller: 'matches'
+    controller: 'matches'
   })
   .state('chat', {
     url: '/chat',
     templateUrl: '../templates/chat.html',
-    // controller: 'chat'
+    controller: 'chat'
   })
   .state('matching', {
     url: '/matching',
     templateUrl: '../templates/matching.html',
-    // controller: 'matching'
+    controller: 'matching'
   })
   .state('search', {
     url: '/search',
     templateUrl: '../templates/search.html',
-    // controller: 'search'
+    controller: 'search'
   })
   .state('editEvent', {
     url: '/editEvent',
     templateUrl: '../templates/editEvent.html',
-    // controller: 'editEvent'
+    controller: 'editEvent'
   })
   .state('profile', {
     url: '/profile',
     templateUrl: '../templates/profile.html',
-    // controller: 'profile'
+    controller: 'profile'
   });
 
 }]);
