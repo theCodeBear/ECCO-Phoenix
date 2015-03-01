@@ -12,7 +12,8 @@
           <h3 class="media-heading">{{event.name}}</h3>
           <h5><i class='fa fa-map-marker'></i> &nbsp; {{event.location}}</h5>
           <h5><i class='fa fa-calendar-o'></i> &nbsp; {{event.startDate}}</h5>
-          <button type='button' class='btn btn-default' ng-click='attend()'>Attend Event</button>
+          <button type='button' class='btn btn-default attend' ng-click='attend()' ng-show='!attending'>Attend Event</button>
+          <button type='button' class='btn btn-success attend' ng-show='attending' disabled>Attending!</button>
         </div>
       </div>
     </div>
