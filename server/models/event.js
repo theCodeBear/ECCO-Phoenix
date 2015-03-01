@@ -12,6 +12,7 @@ var eventSchema = mongoose.Schema({
   endDate: {type: Date, required: true},
   twitterHandler: {type: String},
   twitterHash: {type: String},
+  creator: {type: mongoose.Schema.ObjectId, ref: 'User'},
   attendees: [{type: mongoose.Schema.ObjectId, ref: 'User'}]
 });
 

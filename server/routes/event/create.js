@@ -18,7 +18,6 @@ module.exports = {
     }
   },
   handler: function(request,reply) {
-
     var event = new Event(request.payload);
     console.log(request.payload);
     event.save(function() {

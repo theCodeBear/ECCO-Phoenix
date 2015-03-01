@@ -1,4 +1,4 @@
-var myApp = angular.module('app', ['ui.router']);
+var myApp = angular.module('ecco', ['ui.router']);
 
 myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
@@ -18,7 +18,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
   .state('event', {
     url: '/event/:id',
     templateUrl: '../templates/event.html',
-    // controller: 'event'
+    controller: 'event'
   })
   .state('createEvent', {
     url: '/createEvent',
