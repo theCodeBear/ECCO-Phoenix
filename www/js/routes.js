@@ -51,7 +51,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
     controller: 'editEvent'
   })
   .state('profile', {
-    url: '/profile',
+    url: '/profile/:id',
     templateUrl: '../templates/profile.html',
     controller: 'profile'
   });

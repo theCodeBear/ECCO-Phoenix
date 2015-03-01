@@ -20,9 +20,9 @@ module.exports = {
   handler: function(request,reply) {
     var event = new Event(request.payload);
     console.log(request.payload);
-    event.save(function() {
+    event.save(function(err, event) {
       console.log('event saved!');
-      reply();
+      reply.redirect("/home#/event/"+event._id);
     })
   }
 };
