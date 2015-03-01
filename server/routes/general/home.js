@@ -8,7 +8,7 @@ module.exports = {
     if (!request.auth.isAuthenticated) {
       reply.redirect('/');
     } else {
-      reply.view('templates/general/home');
+      reply.view('templates/general/home', { id: request.auth.credentials._id });
     }
   }
 };
