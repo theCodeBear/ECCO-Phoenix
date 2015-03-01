@@ -37,10 +37,9 @@ body {
 .event-picture img {
   border: 2px solid #fff;
   background: #fff;
-  margin-top: -60px;
-  padding: 10px;
-  height: 120px;
-  width: 120px;
+  margin-top: -50px;
+  height: 100px;
+  width: 100px;
   border-radius: 5px;
   box-shadow: 0 0 7px rgba(0,0,0,.1);
 }
@@ -55,6 +54,7 @@ body {
 
 .event-description {
   padding-top: 0;
+  min-height: 80px;
 }
 
 .event-description p {
