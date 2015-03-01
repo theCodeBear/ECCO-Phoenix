@@ -54,10 +54,12 @@ body {
 
 .event-description {
   padding-top: 0;
-  min-height: 80px;
+  min-height: 120px;
+  max-height: 120px;
 }
 
 .event-description p {
+  text-align: justify;
   color: #000;
 }
 
