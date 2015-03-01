@@ -1,6 +1,37 @@
-event
-
-{{event.name}}<br>
-{{event.location}}<br>
-{{event.description}}<br>
-<img src="{{event.picture}}"><br>
+<header class='event-background' style='background: url({{event.backgroundPicture}}) no-repeat top center'></header>
+<section id='event-info'>
+  <div class='col-md-8'>
+    <div class='page-header' style='margin-top: 20px;'>
+      <div class="media">
+        <div class="media-left">
+          <a href="#">
+            <img class="media-object" data-src="{{event.picture}}" alt="64x64" src="{{event.picture}}" data-holder-rendered="true" style="width: 100px; height: 100px;">
+          </a>
+        </div>
+        <div class="media-body" style='padding-left: 20px;'>
+          <h3 class="media-heading">{{event.name}}</h3>
+          <h5><i class='fa fa-map-marker'></i> &nbsp; {{event.location}}</h5>
+          <h5><i class='fa fa-calendar-o'></i> &nbsp; {{event.startDate}}</h5>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class='text-justify'>
+        {{event.description}}
+      </p>
+    </div>
+  </div>
+  <div class='col-md-4'>
+    <div class='page-header'>
+      <h3>Atendees</h3>
+    </div>
+    <div class='col-md-12' ng-repeat='user in event.atendees'>
+      {{user.name}}
+    </div>
+  </div>
+</section>
+<section id='event-twitter'>
+  <div class='col-md-12' style='margin-top: 25px;'>
+    blah
+  </div>
+</section>

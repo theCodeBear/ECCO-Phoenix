@@ -75,3 +75,11 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+.event-background {
+  display: block;
+  margin-top: -50px;
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+}
