@@ -17,16 +17,27 @@
         <h3 class='text-center login-header'>Connect with people before you meet.</h3>
         <!-- <fb:login-button data-size='large' scope="public_profile,email,user_friends" onlogin="checkLoginState();">Login with Facebook
         </fb:login-button> -->
-        <form method='post' action='/user/authenticate'>
-          <input type="email" name='email' placeholder="Email" required>
-          <input type="password" name='password' placeholder="Password" required><br>
-          <input type="submit" value="Login">
+        <form method='post' action='/user/authenticate' class='text-left'>
+          <div class='form-group'>
+            <label>Email</label>
+            <input class='form-control' type="email" name='email' placeholder="Email" required>
+          </div>
+          <div class='form-group'>
+            <label>Password</label>
+            <input class='form-control' type="password" name='password' placeholder="Password" required><br>
+          </div>
+          <div class='form-inline'>
+            <div class='form-group' style='width: 40%'>
+              <button class='btn btn-default' type="submit">Login</button>
+            </div>
+            <div class='form-group text-right' style='font-size: 1.2em;'>
+              Dont have an account? <a href="/user/new" style='color: #444; font-weight: 600;'>Create one!</a>
+            </div>
+          </div>
+
         </form>
       </div>
       <div class='col-md-3'></div>
-    </div>
-    <div id="signup" class="text-center">
-      <a href="/user/new">Sign Up</a>
     </div>
   </div>
   <!-- // <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script> -->
