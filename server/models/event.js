@@ -7,7 +7,7 @@ var eventSchema = mongoose.Schema({
   backgroundPicture: {type: String},
   description: {type: String, required: true},
   location: {type: String, required: true},
-  geoLocation: {type: String, required: true},
+  geoLocation: String,
   startDate: {type: Date, required: true},
   endDate: {type: Date, required: true},
   twitterHandler: {type: String},

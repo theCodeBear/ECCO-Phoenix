@@ -10,7 +10,7 @@ module.exports = {
       startDate:          Joi.date().required(),
       endDate:            Joi.date().required(),
       picture:            Joi.string().required(),
-      backgroundPicture:  Joi.string().required(),
+      backgroundPicture:  Joi.string().min(0),
       twitterHandle:      Joi.string().required(),
       twitterHash:        Joi.string().required(),
       description:        Joi.string().required(),
@@ -19,6 +19,7 @@ module.exports = {
   },
   handler: function(request,reply) {
     var event = new Event(request.payload);
+    console.log(request.payload);
     event.save(function() {
       console.log('event saved!');
       reply();
