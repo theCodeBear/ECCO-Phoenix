@@ -4,7 +4,8 @@ var Event = require('../../models/event');
 
 module.exports = {
   handler: function(request,reply) {
-    Event.findById(request.params.eventId, function(err, event) {
+    Event.findById(request.params.eventId).populate('attendees').exec(function(err, event) {
+      console.log(event);
       if (err) { console.error(err); }
       reply(event);
     });

@@ -13,6 +13,7 @@ module.exports = [
 
   { method: 'get', path: '/events', config: require('../routes/event/index') },
   { method: 'get', path: '/event/{eventId}', config: require('../routes/event/show') },
+  { method: 'post', path: '/event/{eventId}', config: require('../routes/event/attend') },
   { method: 'post', path: '/event', config: require('../routes/event/create') },
   { method: 'get', path: '/myEvents', config: require('../routes/event/myEvents') }
 ];
