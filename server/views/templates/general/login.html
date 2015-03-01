@@ -18,8 +18,8 @@
         <!-- <fb:login-button data-size='large' scope="public_profile,email,user_friends" onlogin="checkLoginState();">Login with Facebook
         </fb:login-button> -->
         <form method='post' action='/user/authenticate'>
-          <input type="email" placeholder="Email" required>
-          <input type="password" placeholder="Password" required><br>
+          <input type="email" name='email' placeholder="Email" required>
+          <input type="password" name='password' placeholder="Password" required><br>
           <input type="submit" value="Login">
         </form>
       </div>

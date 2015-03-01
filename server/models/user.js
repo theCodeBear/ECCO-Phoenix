@@ -40,12 +40,11 @@ userSchema.methods.register = function(cb) {
 };
 
 userSchema.statics.authenticate = function(user, cb) {
-  console.log('user in user.js: ', user);
   User.findOne({email: user.email}, function(err, dbUser) {
-    if (!dbUser) { return cb(true); }
+    if (!dbUser) { console.log('email failed'); return cb(true); }
 
     var isGood = bcrypt.compareSync(user.password, dbUser.password);
-    if (!isGood) { return cb(true); }
+    if (!isGood) { console.log('password failed'); return cb(true); }
 
     cb(null, dbUser);
   });

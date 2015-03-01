@@ -17,8 +17,6 @@ module.exports = {
   },
   auth: false,
   handler: function(request,reply) {
-    console.log(request.payload);
-
     User.findOne({email: request.payload.email}, function(err, user) {
       // if account is already created
       if (user) {

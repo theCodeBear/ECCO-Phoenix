@@ -10,14 +10,15 @@ module.exports = {
       password: Joi.string().min(3)
     }
   },
-  auth: {
-    mode: 'try'
-  },
+  auth: false,
   handler: function(request,reply) {
     User.authenticate(request.payload, function(err, user) {
-      if (err) { return reply.redirect('/'); }
-      request.auth.session.set(user);
-      reply.redirect('/home');
+      if (err) { 
+        reply.redirect('/');
+      } else {
+        request.auth.session.set(user);
+        reply.redirect('/home');
+      }
     });
   }
 };
