@@ -9,4 +9,11 @@ myApp.controller('profile', ['$scope', '$http', '$stateParams', function($scope,
     console.log('ERROR');
   });
 
+  $scope.logout = function() {
+    $http.post('/logout').success(function(data, status, headers, config) {
+      console.log('Success', status);
+    }).error(function(data, status, headers, config) {
+      console.log('Error', status);
+    });
+  }
 }]);

@@ -1,8 +1,23 @@
-{{profile}}
-
-<img src="{{user.picture}}" alt="profile photo">
-{{user.email}}<br>
-{{user.name}}<br>
-{{user.jobTitle}}<br>
-{{user.description}}<br>
-{{user.skills}}<br>
+<div class='page-header'>
+  <h2>{{user.name}}</h2>
+  <button class='btn btn-danger' ng-click='logout()'>Log Out</button>
+</div>
+<div class="media">
+  <div class="media-left">
+    <img class="media-object" data-src="{{user.picture}}" alt="64x64" src="" data-holder-rendered="true" style="width: 150px; height: 150px;">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Title</h4>
+    <h5>{{user.jobTitle}}</h5>
+    <h4 class="media-heading">Skills</h4>
+    <h5>{{user.skills}}</h5>
+  </div>
+  <div style='padding: 15px 0;'>
+    <p>
+      {{user.description}}
+    </p>
+  </div>
+</div>
+<div class='page-header'>
+  <h2>Events</h2>
+</div>

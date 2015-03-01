@@ -21,11 +21,6 @@ module.exports = {
       // if account is already created
       if (user) {
         reply.redirect('/');  // send back to login
-        // User.authenticate(request.payload, function(err, user) {
-        //   if (err) { return reply.redirect('/'); }
-        //   request.auth.session.set(user);
-        //   reply.redirect('/home');
-        // });
       } else {  // signing up for first time
         var newUser = new User(request.payload);
         newUser.register(function(err, dbUser) {
@@ -37,33 +32,3 @@ module.exports = {
     });
   }
 };
-
-    // var tempUser = {
-    //   faceBookID: request.payload.id,
-    //   name: request.payload.first_name + " " + request.payload.last_name,
-    //   picture: 'graph.facebook.com/' + request.payload.id + '/picture?type=large'
-    //   // friendsList: request.payload.friends_list
-    // };
-    // console.log(tempUser);
-    // User.findOne({faceBookID: tempUser.faceBookID}, function(err, user) {
-    //   // if user already in database, authenticate
-    //   if (user) {
-    //     User.authenticate(tempUser, function(err, theUser) {
-    //       if (err) { return reply.redirect('/'); }
-    //       request.auth.session.set(theUser);
-    //       reply.redirect('/home');
-    //     });
-    //   } else {  // if user not in database, create
-    //     var theUser = new User(tempUser);
-    //     theUser.register(function(err) {
-    //       if (err) {
-    //         console.error(err);
-    //       } else {
-    //         request.auth.session.set(user);
-    //         reply.redirect('/account');
-    //       }
-    //     });
-    //   }
-    // });
-//   }
-// };

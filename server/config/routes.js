@@ -10,6 +10,7 @@ module.exports = [
   { method: 'post', path: '/user/authenticate', config: require('../routes/user/authenticate') },
   { method: 'post', path: '/user/{userId}', config: require('../routes/user/update') },
   { method: 'get', path: '/user/{userId}', config: require('../routes/user/show') },
+  { method: 'post', path: '/logout', config: require('../routes/user/logout')},
 
   { method: 'get', path: '/events', config: require('../routes/event/index') },
   { method: 'get', path: '/event/{eventId}', config: require('../routes/event/show') },
