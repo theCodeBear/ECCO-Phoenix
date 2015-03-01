@@ -1,17 +1,19 @@
 <div class='col-md-4 event-outer' ng-repeat='event in events'>
-  <a ng-href='#/event/{{event._id}}'>
-    <div class='col-md-12 event-inner'>
-      <div class='event-backgroundPicture' style='background: url({{event.backgroundPicture}}) no-repeat center center'></div>
-      <div class='event-picture text-center'><img src='{{event.picture}}'></div>
-      <div class='event-name'>
-        <h4>{{event.name}}</h4>
-        <h5><i class='fa fa-map-marker'></i> &nbsp; {{event.location}}</h5>
-      </div>
-      <div class='event-description'>
-        <p>
-          {{event.summary}}
-        </p>
-      </div>
+  <div class='col-md-12 event-inner'>
+    <div class='event-backgroundPicture' style='background: url({{event.backgroundPicture}}) no-repeat center center'></div>
+    <div class='event-picture text-center'><img src='{{event.picture}}'></div>
+    <div class='event-name'>
+      <h4>{{event.name}}</h4>
+      <h5><i class='fa fa-map-marker'></i> &nbsp; {{event.location}}</h5>
+      <h5><i class='fa fa-calendar-o'></i> &nbsp; {{event.startDate}}</h5>
     </div>
-  </a>
+    <div class='event-description'>
+      <p>
+        {{event.summary}}
+      </p>
+    </div>
+    <div class='col-md-12'>
+      <a ng-href='event/{{event._id}}' class='event-attend form-control text-center'>View More Information</a>
+    </div>
+  </div>
 </div>

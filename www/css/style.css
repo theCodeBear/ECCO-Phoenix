@@ -35,13 +35,14 @@ body {
 }
 
 .event-picture img {
-  border: 2px solid #dfdfdf;
+  border: 2px solid #fff;
   background: #fff;
-  margin-top: -50px;
+  margin-top: -60px;
   padding: 10px;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border-radius: 5px;
+  box-shadow: 0 0 7px rgba(0,0,0,.1);
 }
 
 .event-name, .event-description {
@@ -54,6 +55,21 @@ body {
 
 .event-description {
   padding-top: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
+}
+
+.event-description p {
+  color: #000;
+}
+
+.event-attend {
+  background: #00B760;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.event-attend:hover {
+  background: #00a84e;
+  color: #fff;
+  text-decoration: none;
 }
