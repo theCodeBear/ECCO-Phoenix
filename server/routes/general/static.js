@@ -4,7 +4,7 @@ module.exports = {
   auth: false,
   handler: {
     directory: {
-      path: __dirname + '/../../../www'
+      path: __dirname + '/../../../public'
     }
   }
 };
